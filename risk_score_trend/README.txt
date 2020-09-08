@@ -24,8 +24,8 @@ Required input files:
 “Covid-19-R.csv" (automatically imported from github), "Covid-19.csv" (automatically imported from github), "county_storage.csv"
 Output:
 - Risk Trend Time Series Plot for target region
-- A list of regions ranked by trend of Risk-Score. The table categorizes region into one of the three categories: trending up, neutral, trending down.
-
+- "rs_trend_recent.csv": A list of regions ranked by recent Risk-Score trend. Only includes most recent Risk-Score data.
+- "rs_trend_combined.csv": This data includes Risk-Score trend for all past data.
 
 =================================================================================
 =============================     Results      ==================================
