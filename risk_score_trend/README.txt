@@ -4,7 +4,7 @@ This script analyze Risk-Score calculated by USC-ANRG team to determine if the R
 
 Instructions for running the following code:
 =================================================================================
-Note: These files are developed and tested in Python3.6.
+Note: These files are developed and tested in Python 3.7.6.
 
 The following packages are required to run the codes:
 -jupyter noteboook
@@ -25,6 +25,13 @@ Required input files:
 Output:
 - Risk Trend Time Series Plot for target region
 - "rs_trend_recent.csv": A list of regions ranked by recent Risk-Score trend. Only includes most recent Risk-Score data.
+            - Time Stamp: The date which the trend was calculated from
+            - Region: The name of the region within LA county
+            - Risk-Score: Risk-Score calculated by USC team
+            - Daily New Cases: Daily new Covid-19 confirmed cases in each region
+            - Rolling Risk-Score: 18 day rolling average Risk-Score
+            - RS Diff: Daily rolling average Risk-Score Difference of most recent data
+            - Trend: Risk-Score Trend categorized from RS Diff
 - "rs_trend_combined.csv": This data includes Risk-Score trend for all past data.
 
 =================================================================================
