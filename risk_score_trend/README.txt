@@ -22,22 +22,30 @@ The following packages are required to run the codes:
 
 Required input files:
 “Covid-19-R.csv" (automatically imported from github), "Covid-19.csv" (automatically imported from github), "county_storage.csv"
-Output:
-- Risk Trend Time Series Plot for target region
-- "rs_trend_recent.csv": A list of regions ranked by recent Risk-Score trend. Only includes most recent Risk-Score data.
-            - Time Stamp: The date which the trend was calculated from
-            - Region: The name of the region within LA county
-            - Risk-Score: Risk-Score calculated by USC team
-            - Daily New Cases: Daily new Covid-19 confirmed cases in each region
-            - Rolling Risk-Score: 18 day rolling average Risk-Score
-            - RS Diff: Daily rolling average Risk-Score Difference of most recent data
-            - Trend: Risk-Score Trend categorized from RS Diff
-- "rs_trend_combined.csv": This data includes Risk-Score trend for all past data.
+
 
 =================================================================================
 =============================     Results      ==================================
-csv file: contains Time stamp, Region, Risk-Score Difference, Trend Level, risk level (which is a quantized version of risk score into 4 levels 0-3)
-=================================================================================
+- Risk Trend Time Series Plot for target region
+- "rs_trend_recent.csv": A list of regions ranked by recent Risk-Score trend. Only includes most recent Risk-Score data.
+        Column Description:
+            - Time Stamp: The date of the data which the trend was calculated from
+            - Region: The name of the region within LA county
+            - Risk-Score: Risk-Score of the specified region
+            - Daily New Cases: Daily new Covid-19 confirmed cases in specified region
+            - Rolling Risk-Score: 18 day rolling average Risk-Score
+            - RS Diff: Daily rolling average Risk-Score Difference
+            - Trend: Risk-Score Trend Category (UP, Neutral, Down)
+- "rs_trend_combined.csv": This data includes Risk-Score trend for all past data.
+        Column Description:
+            - Time Stamp: The date of the data which the trend was calculated from
+            - Region: The name of the region within LA county
+            - Risk-Score: Risk-Score of the specified region
+            - Risk-Level: Risk-Level of the specified region
+            - Daily New Cases: Daily new Covid-19 confirmed cases in specified region
+            - Rolling Risk-Score: 18 day rolling average Risk-Score
+            - RS Diff: Daily rolling average Risk-Score Difference
+            - Trend: Risk-Score Trend Category (UP, Neutral, Down)
 
 
 =================================================================================
